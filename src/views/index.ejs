@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <img style="width:200px; height:200px;display: block;" src="image/me.jpg" alt="">
     <div class="topnav">
         <a class="active" href="#home">Home</a>
         <a href="#news">News</a>
@@ -44,7 +43,11 @@
                     <%= dataUser[i].address %>
                 </td>
                 <td>
-                    <button type="button">Detail</button>
+                    <button type="button">
+                        <a href="/detail/user/<%=dataUser[i].id%>">
+                            Detail
+                        </a>
+                    </button>
                     <button type="button">Edit</button>
                     <button type="button">Delete</button>
                 </td>

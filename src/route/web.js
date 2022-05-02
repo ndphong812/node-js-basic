@@ -7,6 +7,9 @@ const initWebRoute = (app) => {
     router.get('/about', (req, res) => {
         res.send("This is About Page!")
     })
+
+    router.get('/detail/user/:userID', homeController.getDetailPage)
+
     return app.use("/", router)
 }
 export default initWebRoute;
